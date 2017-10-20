@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Windows-x86</title>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+<script src="../web/assets/jquery/jquery.min.js"></script>
+<script>
+$(function() {
+$('a[data-auto-download]').each(function(){
+var $this = $(this);
+setTimeout(function() {
+window.location = $this.attr('href');
+}, 2000);
+});
+});
+</script>
+</head>
+<body>
+<div class="wrapper container">
+  <div class="row">
+    <div class="col col-lg-12">
+       <p class="h4 text-center" style="padding: 200px">The download should start shortly. If it doesn't
+           <a class="btn btn-success" data-auto-download href="windows-x86(32bit).zip">click here</a>
+       </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
